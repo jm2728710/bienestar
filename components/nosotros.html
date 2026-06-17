@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSalud - Nosotros</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts para Tipografía Elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados (Subiendo un nivel hacia la carpeta css) -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../img/img1.png" alt="VitalSalud Logo" class="me-2 brand-logo" onerror="this.style.display='none'">
+                    <div>
+                        <span class="fw-bold d-block lh-1 fs-4">VitalSalud</span>
+                        <small class="fs-7 opacity-75">Tu bienestar es nuestra misión</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL (Uso de maquetación semántica <main>) -->
+    <main class="container py-5 animate-fade-in">
+        
+        <!-- ENCABEZADO DE SECCIÓN -->
+        <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold color-primary-dark">Sobre Nosotros</h1>
+            <p class="lead text-muted max-w-md mx-auto">Conoce la historia, el compromiso y los valores del equipo médico que cuida de ti.</p>
+            <hr class="mx-auto style-line" style="width: 60px; height: 3px; background-color: #003B73; opacity: 1;">
+        </section>
+
+        <!-- SECCIÓN COMPROMISO (Misión y Visión con Rejilla de Bootstrap) -->
+        <section class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100 p-4 info-card border-0 shadow-sm">
+                    <div class="icon-container mb-3 text-primary bg-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        <i class="bi bi-bullseye fs-4"></i>
+                    </div>
+                    <h2 class="h4 fw-bold text-dark">Nuestra Misión</h2>
+                    <p class="text-muted card-text-custom">Ofrecer servicios médicos integrales con los más altos estándares de calidad y calidez humana, apoyados en tecnología avanzada y un equipo clínico de primer nivel enfocado en preservar y mejorar la vida de nuestros pacientes.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 p-4 info-card border-0 shadow-sm">
+                    <div class="icon-container mb-3 text-primary bg-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        <i class="bi bi-eye fs-4"></i>
+                    </div>
+                    <h2 class="h4 fw-bold text-dark">Nuestra Visión</h2>
+                    <p class="text-muted card-text-custom">Consolidarnos para el año 2028 como el centro médico digital y presencial referente del sector salud, distinguidos por la excelencia clínica, la constante innovación en bioseguridad y la máxima confianza de las familias.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN VALORES CORPORATIVOS -->
+        <section class="py-4">
+            <h2 class="text-center fw-bold color-primary-dark mb-4">Valores que Nos Definen</h2>
+            <div class="row g-3 text-center">
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-3 bg-light rounded shadow-sm h-100">
+                        <i class="bi bi-heart-fill text-danger fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-dark d-block mb-1">Empatía</span>
+                        <small class="text-muted">Entendemos y sentimos las necesidades de cada paciente.</small>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-3 bg-light rounded shadow-sm h-100">
+                        <i class="bi bi-award-fill text-warning fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-dark d-block mb-1">Excelencia</span>
+                        <small class="text-muted">Buscamos la perfección técnica en cada procedimiento.</small>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-3 bg-light rounded shadow-sm h-100">
+                        <i class="bi bi-shield-fill-check text-success fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-dark d-block mb-1">Integridad</span>
+                        <small class="text-muted">Actuamos bajo una ética profesional intachable.</small>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-3 bg-light rounded shadow-sm h-100">
+                        <i class="bi bi-people-fill text-info fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-dark d-block mb-1">Trabajo en Equipo</span>
+                        <small class="text-muted">La unión de nuestras disciplinas garantiza el éxito.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold color-primary-dark">Sobre Nosotros</h1>
+            <p class="lead text-muted max-w-md mx-auto">Conoce la historia, el compromiso y los valores del equipo médico que cuida de ti.</p>
+            
+            <div class="row justify-content-center my-4">
+                <div class="col-md-8">
+                    <blockquote class="blockquote p-3 bg-light rounded border-start border-4 border-primary shadow-sm">
+                        <p class="mb-2 italic font-monospace text-secondary fs-6">
+                            "Aquel que tiene salud tiene esperanza; y aquel que tiene esperanza, lo tiene todo."
+                        </p>
+                        <footer class="blockquote-footer fs-7 mt-1">Proverbio Árabe</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <hr class="mx-auto style-line" style="width: 60px; height: 3px; background-color: #003B73; opacity: 1;">
+        </section>
+
+    <!-- FOOTER REUTILIZABLE -->
+    <footer class="bg-dark-blue text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <span class="fw-bold fs-5">VitalSalud</span>
+                <p class="m-0 text-muted fs-7">© 2026 VitalSalud. Todos los derechos reservados. Tu bienestar es nuestra misión.</p>
+                <div class="d-flex gap-3 social-links">
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle con Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lógica de Javascript (Subiendo un nivel a la carpeta js) -->
+    <script src="../main/app.js"></script>
+</body>
+</html>

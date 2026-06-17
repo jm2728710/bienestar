@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSalud - Servicios</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts para Tipografía Elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados (Apuntando a la carpeta css raíz) -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR REUTILIZABLE -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../img/img1.png" alt="VitalSalud Logo" class="me-2 brand-logo" onerror="this.style.display='none'">
+                    <div>
+                        <span class="fw-bold d-block lh-1 fs-4">VitalSalud</span>
+                        <small class="fs-7 opacity-75">Tu bienestar es nuestra misión</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-5">
+        
+        <!-- ENCABEZADO DE SECCIÓN -->
+        <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold color-primary-dark">Nuestras 9 Especialidades</h1>
+            <p class="lead text-muted max-w-md mx-auto">Ofrecemos un portafolio de atención médica especializada con los mejores estándares del sector.</p>
+            <hr class="mx-auto style-line" style="width: 60px; height: 3px; background-color: #003B73; opacity: 1;">
+        </section>
+
+        <!-- SECCIÓN DE LAS 9 ESPECIALIDADES (Grid Adaptable) -->
+        <section class="row g-4">
+            <!-- 1. Cardiología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-heart-pulse fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">1. Cardiología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Prevención, evaluación oportuna y tratamiento avanzado de patologías cardiovasculares.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 2. Pediatría -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-balloon fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">2. Pediatría</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Cuidado médico especializado enfocado en el crecimiento y salud de bebés y niños.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 3. Ginecología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-gender-female fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">3. Ginecología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Atención médica integral para el cuidado de la salud del sistema reproductor femenino.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 4. Traumatología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-capsule-orthopedic fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">4. Traumatología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Tratamiento médico especializado para lesiones en el sistema osteomuscular y articulaciones.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 5. Dermatología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-sun fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">5. Dermatología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Diagnóstico clínico integral y tratamientos de afecciones o cuidados de la piel.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 6. Oftalmología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-eye fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">6. Oftalmología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Exámenes de agudeza visual, control patológico y cirugías oculares de alta precisión.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 7. Neurología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-brain fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">7. Neurología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Prevención y manejo de patologías complejas del sistema nervioso central y periférico.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 8. Odontología -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-emoji-smile fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">8. Odontología</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Tratamientos odontológicos integrales, ortodoncia avanzada y estética dental profesional.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+            <!-- 9. Medicina General -->
+            <div class="col-md-4">
+                <div class="card h-100 info-card text-center p-4 d-flex flex-column">
+                    <div class="icon-container mb-3 mx-auto"><i class="bi bi-stethoscope fs-4"></i></div>
+                    <h3 class="h5 fw-bold text-dark">9. Medicina General</h3>
+                    <p class="text-muted card-text-custom flex-grow-1">Evaluación clínica general, control primario y canalización preventiva de la salud.</p>
+                    <button class="btn btn-elegant btn-sm mt-3 w-100 py-2 btn-agendar-servicio">Agendar Cita</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER REUTILIZABLE -->
+    <footer class="bg-dark-blue text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <span class="fw-bold fs-5">VitalSalud</span>
+                <p class="m-0 text-muted fs-7">© 2026 VitalSalud. Todos los derechos reservados. Tu bienestar es nuestra misión.</p>
+                <div class="d-flex gap-3 social-links">
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle con Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lógica de Javascript (Subiendo un nivel a la carpeta js) -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

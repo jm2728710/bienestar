@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSalud - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/img1.png" alt="VitalSalud Logo" class="me-2 brand-logo" onerror="this.style.display='none'">
+                    <div>
+                        <span class="fw-bold d-block lh-1 fs-4">VitalSalud</span>
+                        <small class="fs-7 opacity-75">Tu bienestar es nuestra misión</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="components/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="components/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="components/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="components/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: linear-gradient(rgba(4, 28, 69, 0.5), rgba(4, 28, 69, 0.5)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200');">
+                    <div class="container h-100 d-flex align-items-center">
+                        <div class="carousel-caption text-start custom-caption">
+                            <h1 class="display-4 fw-bold">Atención Médica Avanzada</h1>
+                            <p class="lead">Cuidamos de ti y de tu familia con tecnología de punta y profesionales altamente capacitados.</p>
+                            <button class="btn btn-elegant btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">Agendar Cita</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: linear-gradient(rgba(4, 28, 69, 0.5), rgba(4, 28, 69, 0.5)), url('https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1200');">
+                    <div class="container h-100 d-flex align-items-center">
+                        <div class="carousel-caption text-start custom-caption">
+                            <h1 class="display-4 fw-bold">Infraestructura Moderna</h1>
+                            <p class="lead">Contamos con instalaciones diseñadas para brindarte comodidad, seguridad y tranquilidad absoluta.</p>
+                            <a href="components/nosotros.html" class="btn btn-elegant btn-lg">Conócenos Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: linear-gradient(rgba(4, 28, 69, 0.5), rgba(4, 28, 69, 0.5)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200');">
+                    <div class="container h-100 d-flex align-items-center">
+                        <div class="carousel-caption text-start custom-caption">
+                            <h1 class="display-4 fw-bold">Especialistas a tu Servicio</h1>
+                            <p class="lead">Explora nuestras 9 especialidades médicas preparadas para cubrir cualquier necesidad de salud.</p>
+                            <a href="components/servicios.html" class="btn btn-elegant btn-lg">Ver Especialidades</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </section>
+
+        <section class="py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="fw-bold color-primary-dark">Bienvenidos a VitalSalud</h2>
+                <p class="text-muted max-w-md mx-auto">Comprometidos con ofrecer servicios médicos de excelencia, calidez humana e innovación constante.</p>
+                <div class="mt-4">
+                    <button class="btn badge-emergency border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        <i class="bi bi-telephone-fill me-2 animate-pulse"></i>Línea de Emergencia 24/7
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 info-card text-center p-4">
+                            <div class="icon-container mb-3 mx-auto">
+                                <i class="bi bi-heart-pulse fs-3"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark">Cuidado Integral</h3>
+                            <p class="text-muted card-text-custom">Atención médica enfocada en la prevención, el diagnóstico oportuno y el seguimiento constante.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 info-card text-center p-4">
+                            <div class="icon-container mb-3 mx-auto">
+                                <i class="bi bi-shield-check fs-3"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark">Seguridad Garantizada</h3>
+                            <p class="text-muted card-text-custom">Contamos con protocolos estrictos de bioseguridad y tecnología médica certificada.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 info-card text-center p-4">
+                            <div class="icon-container mb-3 mx-auto">
+                                <i class="bi bi-headset fs-3"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark">Soporte Inmediato</h3>
+                            <p class="text-muted card-text-custom">Canales de comunicación abiertos y atención de urgencias prioritaria en todo momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="card h-100 border-0 shadow-sm panel-details">
+                            <div class="panel-header-custom p-3 text-white">
+                                <h4 class="m-0 h6 fw-bold"><i class="bi bi-clock-fill me-2"></i>Horarios de Atención</h4>
+                            </div>
+                            <div class="p-4 bg-white">
+                                <div class="d-flex justify-content-between border-bottom py-2"><span class="fw-semibold">Lunes a Viernes:</span> <span class="text-muted">07:00 - 21:00</span></div>
+                                <div class="d-flex justify-content-between border-bottom py-2"><span class="fw-semibold">Sábados:</span> <span class="text-muted">08:00 - 16:00</span></div>
+                                <div class="d-flex justify-content-between border-bottom py-2"><span class="fw-semibold">Domingos:</span> <span class="text-muted text-danger fw-bold">Solo Emergencias</span></div>
+                                <div class="mt-3 text-danger fw-bold text-center alert alert-danger p-2 mb-0"><small>Urgencias: 24 Horas / 365 Días</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card h-100 border-0 shadow-sm panel-details">
+                            <div class="panel-header-custom p-3 text-white">
+                                <h4 class="m-0 h6 fw-bold"><i class="bi bi-geo-alt-fill me-2"></i>Nuestra Ubicación Central</h4>
+                            </div>
+                            <div class="p-0 position-relative h-100 min-h-250">
+                                <iframe class="w-100 h-100 border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.474581451877!2d-68.1923056!3d-16.5020942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDMwJzA3LjUiUyA2OMKwMTEnMzIuMyJX!5e0!3m2!1ses!2sbo!4v1650000000000!5m2!1ses!2sbo" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-elegant text-white">
+                    <h5 class="modal-title fw-bold" id="appointmentModalLabel">Agendar una Cita Médica</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="appointmentForm" novalidate>
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control" id="inputName" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label fw-semibold">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                            <div class="invalid-feedback">Por favor, proporciona un correo electrónico válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="selectSpecialty" class="form-label fw-semibold">Especialidad Requerida</label>
+                            <select class="form-select" id="selectSpecialty" required>
+                                <option value="" selected disabled>Selecciona una de las 9 especialidades...</option>
+                                <option value="1">Cardiología</option>
+                                <option value="2">Pediatría</option>
+                                <option value="3">Ginecología</option>
+                                <option value="4">Traumatología</option>
+                                <option value="5">Dermatología</option>
+                                <option value="6">Oftalmología</option>
+                                <option value="7">Neurología</option>
+                                <option value="8">Odontología</option>
+                                <option value="9">Medicina General</option>
+                            </select>
+                            <div class="invalid-feedback">Por favor, selecciona una especialidad de la lista.</div>
+                        </div>
+                        <button type="submit" class="btn btn-elegant w-100 py-2 mt-2">Confirmar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark-blue text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <span class="fw-bold fs-5">VitalSalud</span>
+                <p class="m-0 text-muted fs-7">© 2026 VitalSalud. Todos los derechos reservados. Tu bienestar es nuestra misión.</p>
+                <div class="d-flex gap-3 social-links">
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

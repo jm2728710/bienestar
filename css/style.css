@@ -1,0 +1,197 @@
+:root {
+    --primary-blue: #003B73;       
+    --secondary-blue: #0074B7;     
+    --light-blue: #BFD7ED;       
+    --dark-blue: #041C45;          
+    --elegant-gray: #333333;      
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--elegant-gray);
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.color-primary-dark {
+    color: var(--primary-blue);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue) !important;
+}
+
+.custom-navbar {
+    background-color: var(--dark-blue);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 0.8rem 0;
+}
+
+.brand-logo {
+    height: 40px;
+    width: auto;
+}
+
+.custom-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--light-blue) !important;
+}
+
+
+.carousel-item {
+    height: 70vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-caption {
+    background: rgba(4, 28, 69, 0.7);
+    padding: 2.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--secondary-blue);
+    max-width: 650px;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto zoom para imágenes de la galería */
+.info-card:hover img {
+    transform: scale(1.05);
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text-custom {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.badge-emergency {
+    background-color: #dc3545 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.badge-emergency:hover {
+    background-color: #b21f2d !important;
+    transform: scale(1.03);
+}
+
+/* Animación de latido para el ícono del teléfono */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+/* Botones generales del sitio */
+.btn-elegant {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-elegant:hover {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+}
+
+.bg-elegant {
+    background-color: var(--primary-blue) !important;
+}
+
+/* =========================================================================
+   6. SECCIÓN DE DETALLES, TABLAS Y ELEMENTOS EXTRA
+   ========================================================================= */
+.panel-details {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.panel-header-custom {
+    background-color: var(--primary-blue);
+}
+
+.min-h-250 {
+    min-height: 250px;
+}
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.max-w-md {
+    max-width: 700px;
+}
+
+/* Línea decorativa de títulos */
+.style-line {
+    border: none;
+}
+
+/* Ajustes finos para la tabla de doctores */
+.table th {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Links de redes sociales en el footer */
+.social-links a {
+    font-size: 1.2rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    opacity: 1 !important;
+    transform: translateY(-2px);
+}

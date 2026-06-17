@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSalud - Contacto</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts para Tipografía Elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados (Apuntando a la carpeta css raíz) -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR REUTILIZABLE -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../img/img1.png" alt="VitalSalud Logo" class="me-2 brand-logo" onerror="this.style.display='none'">
+                    <div>
+                        <span class="fw-bold d-block lh-1 fs-4">VitalSalud</span>
+                        <small class="fs-7 opacity-75">Tu bienestar es nuestra misión</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-5">
+        
+        <!-- ENCABEZADO DE SECCIÓN -->
+        <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold color-primary-dark">Pónte en Contacto</h1>
+            <p class="lead text-muted max-w-md mx-auto">¿Tienes dudas o deseas gestionar una cita? Escríbenos o utiliza nuestros canales directos.</p>
+            <hr class="mx-auto style-line" style="width: 60px; height: 3px; background-color: #003B73; opacity: 1;">
+        </section>
+
+        <!-- SECCIÓN FORMULARIO E INFORMACIÓN (Grid de Bootstrap) -->
+        <div class="row g-5">
+            <!-- Bloque de Información de Contacto -->
+            <section class="col-lg-5">
+                <div class="bg-light p-4 rounded shadow-sm h-100">
+                    <h2 class="h4 fw-bold text-dark mb-4">Canales de Atención</h2>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="icon-container me-3 bg-white text-primary p-2 rounded shadow-sm">
+                            <i class="bi bi-geo-alt-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Dirección Central</h3>
+                            <p class="text-muted m-0">Av. Intercomunical, Edificio VitalSalud, Piso 2.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="icon-container me-3 bg-white text-primary p-2 rounded shadow-sm">
+                            <i class="bi bi-telephone-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Central Telefónica</h3>
+                            <p class="text-muted m-0">+591 (2) 224-4668</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="icon-container me-3 bg-white text-primary p-2 rounded shadow-sm">
+                            <i class="bi bi-envelope-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Correo Electrónico</h3>
+                            <p class="text-muted m-0">soporte@vitalsalud.com</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h2 class="h5 fw-bold text-dark mb-3">Redes Sociales</h2>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-facebook me-1"></i> Facebook</a>
+                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-instagram me-1"></i> Instagram</a>
+                        <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-whatsapp me-1"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bloque del Formulario de Contacto -->
+            <section class="col-lg-7">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <h2 class="h4 fw-bold text-dark mb-4">Envíanos un Mensaje Directo</h2>
+                    
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="contactName" class="form-label fw-semibold">Nombre Completo</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Ej. Juan Pérez" required>
+                                <div class="invalid-feedback">Por favor, escribe tu nombre completo.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contactEmail" class="form-label fw-semibold">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="juan@correo.com" required>
+                                <div class="invalid-feedback">Proporciona un correo electrónico válido.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="contactSubject" class="form-label fw-semibold">Asunto</label>
+                                <input type="text" class="form-control" id="contactSubject" placeholder="Motivo del contacto" required>
+                                <div class="invalid-feedback">Escribe el asunto del mensaje.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="contactMessage" class="form-label fw-semibold">Mensaje o Comentarios</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Escribe aquí detalladamente tus dudas..." required></textarea>
+                                <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-elegant w-100 py-2">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- FOOTER REUTILIZABLE -->
+    <footer class="bg-dark-blue text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <span class="fw-bold fs-5">VitalSalud</span>
+                <p class="m-0 text-muted fs-7">© 2026 VitalSalud. Todos los derechos reservados. Tu bienestar es nuestra misión.</p>
+                <div class="d-flex gap-3 social-links">
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white opacity-75"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle con Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lógica de Javascript (Subiendo un nivel a la carpeta js) -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
